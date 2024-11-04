@@ -1,0 +1,66 @@
+/* Estilo da grid */
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 80px); /* 6 colunas de 80px */
+    grid-template-rows: repeat(5, 80px); /* 6 linhas de 80px */
+   
+}
+
+div {
+    display: inline-block;
+    border: 1px solid rgba(238, 236, 236, 0.385);
+    width: 200px;
+    height: 200px;
+}
+/* Estilo das cores */
+.square {
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box ;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: #0099ff;
+}
+
+.green {
+    background-color: #33cc33;
+}
+
+.yellow {
+    background-color: #ffcc00;
+}
+
+.quadrant-1{
+    border-top-color: black;
+}
+
+/* Borda arredondada e preta para quadrantes específicos */
+#quadrant-1,
+#quadrant-6,
+#quadrant-25,
+#quadrant-30 {
+ border: 1px solid black
+}
+
+/* Efeito hover para quadrantes específicos */
+#quadrant-1:hover,
+#quadrant-6:hover,
+#quadrant-25:hover,
+#quadrant-30:hover {
+    background-color: #0066cc; /* Azul */
+}
